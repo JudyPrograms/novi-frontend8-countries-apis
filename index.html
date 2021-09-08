@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="container">
+
+    <div class="header">
+        <img id="globe-image" src="assets/globe.jpeg" alt="globe">
+        <h1>Let's search some country information</h1>
+    </div>
+
+    <div class="search-bar">
+        <input id="input-field" type="text" placeholder="enter country name">
+        <button id="search-button">search</button>
+    </div>
+
+    <div class="info-box">
+        <div class="info-title" id="info-title">
+            <div id="flag-image-div"></div>
+            <h2 id="country-title"></h2>
+        </div>
+
+        <div class="country-info">
+            <p id="country-data-text"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="node_modules/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
